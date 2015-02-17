@@ -3,14 +3,15 @@ Contributors: yithemes
 Tags: yith, woocommerce, quick view, woocommerce quick view, yit, single product, products quick view, free quick view, woocommerce extension
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Sometimes the halfway is better: what if you are looking to a product in a list and its image is still too small? You have to open its product page, waiting for its loading and finally observe what you are interested into. 
-So why don't use a simple way to look immediately at the product's distinctiveness? Here it is what Quick View can offer you.
+Sometimes the halfway is better: what if you are looking to a product in a list and its image is still too small? 
 
 == Description ==
+You have to open its product page, waiting for its loading and finally observe what you are interested into. 
+So why don't use a simple way to look immediately at the product's distinctiveness? Here it is what Quick View can offer you.
 
 People are more attracted to what they can see clearly. And often the classic product lists are not enough to understand the real value of a product. 
 That's when Quick View strikes successfully! Your clients will be free to look in a better way your products, reading also a small description with all the most important features and qualities you want to underline. 
