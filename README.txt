@@ -17,7 +17,7 @@ People are more attracted to what they can see clearly. And often the classic pr
 That's when Quick View strikes successfully! Your clients will be free to look in a better way your products, reading also a small description with all the most important features and qualities you want to underline. 
 In this way, they will be more focused on what they really want and they will proceed easily to the purchase step.
 
-Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woocommerce-quick-view)
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woocommerce-quick-view/).
 
 == Installation ==
 
