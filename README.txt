@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: yithemes
-Tags: yith, woocommerce, quick view
+Tags: yith, woocommerce, quick view, woocommerce quick view, yit, single product, products quick view, free quick view, woocommerce extension
 Requires at least: 4.0
 Tested up to: 4.1
 Stable tag: 1.0
@@ -15,6 +15,8 @@ So why don't use a simple way to look immediately at the product's distinctivene
 People are more attracted to what they can see clearly. And often the classic product lists are not enough to understand the real value of a product. 
 That's when Quick View strikes successfully! Your clients will be free to look in a better way your products, reading also a small description with all the most important features and qualities you want to underline. 
 In this way, they will be more focused on what they really want and they will proceed easily to the purchase step.
+
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woocommerce-quick-view/).
 
 == Installation ==
 
