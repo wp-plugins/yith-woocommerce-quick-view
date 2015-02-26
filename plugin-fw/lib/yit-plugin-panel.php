@@ -407,7 +407,7 @@ if ( ! class_exists( 'YIT_Plugin_Panel' ) ) {
         public function message() {
 
             $message = array(
-                'element_exists'   => $this->get_message( '<strong>' . __( 'The element you have written is already exists. Please, add another name.', 'yit' ) . '</strong>', 'error', false ),
+                'element_exists'   => $this->get_message( '<strong>' . __( 'The element you have written already exists. Please, add another name.', 'yit' ) . '</strong>', 'error', false ),
                 'saved'            => $this->get_message( '<strong>' . __( 'Settings saved', 'yit' ) . '.</strong>', 'updated', false ),
                 'reset'            => $this->get_message( '<strong>' . __( 'Settings reset', 'yit' ) . '.</strong>', 'updated', false ),
                 'delete'           => $this->get_message( '<strong>' . __( 'Element deleted correctly.', 'yit' ) . '</strong>', 'updated', false ),

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH Woocommerce Quick View\n"
-"POT-Creation-Date: 2015-02-17 16:34+0100\n"
-"PO-Revision-Date: 2015-02-17 16:34+0100\n"
+"POT-Creation-Date: 2015-02-26 15:20+0100\n"
+"PO-Revision-Date: 2015-02-26 15:21+0100\n"
 "Last-Translator: \n"
 "Language-Team: YIThemes <plugins@yithemes.com>\n"
 "Language: en\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../class.yith-wcqv-admin.php:124 ../class.yith-wcqv-admin.php:146
+#: ../class.yith-wcqv-admin.php:129 ../class.yith-wcqv-admin.php:151
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1048
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1196
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1202
@@ -25,20 +25,25 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: ../class.yith-wcqv-admin.php:153 ../class.yith-wcqv-admin.php:154
-#: ../plugin-options/settings-options.php:26
+#: ../class.yith-wcqv-admin.php:130 ../class.yith-wcqv-admin.php:152
+msgid "Premium Version"
+msgstr ""
+
+#: ../class.yith-wcqv-admin.php:158 ../class.yith-wcqv-admin.php:159
+#: ../plugin-options/settings-options.php:49
 msgid "Quick View"
 msgstr ""
 
-#: ../class.yith-wcqv-admin.php:208
+#: ../class.yith-wcqv-admin.php:213
 msgid "Plugin Documentation"
 msgstr ""
 
-#: ../class.yith-wcqv-admin.php:225
+#: ../class.yith-wcqv-admin.php:230 ../plugin-options/settings-options.php:11
+#: ../plugin-options/settings-options.php:18
 msgid "YITH WooCommerce Quick View"
 msgstr ""
 
-#: ../class.yith-wcqv-admin.php:226
+#: ../class.yith-wcqv-admin.php:231
 msgid ""
 "In the YIT Plugin tab you can find the YITH WooCommerce Quick View options.\n"
 "\t\t\t\t\t\t\t\t\t\tWith this menu, you can access to all the settings of "
@@ -189,7 +194,9 @@ msgid "Rewrite"
 msgstr ""
 
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1059
-msgid "Word used in the URL of each project (slug from post if empty)"
+msgid ""
+"Univocal identification name in the URL for each product (slug from post if "
+"empty)"
 msgstr ""
 
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1064
@@ -264,7 +271,7 @@ msgstr ""
 msgid "Add with multiupload"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel-wc.php:303
+#: ../plugin-fw/lib/yit-plugin-panel-wc.php:325
 msgid "The changes you made will be lost if you leave this page."
 msgstr ""
 
@@ -302,8 +309,7 @@ msgid "Are you sure of it?"
 msgstr ""
 
 #: ../plugin-fw/lib/yit-plugin-panel.php:410
-msgid ""
-"The element you have written is already exists. Please, add another name."
+msgid "The element you have written already exists. Please, add another name."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-plugin-panel.php:411
@@ -479,11 +485,11 @@ msgid "Invalid licence key"
 msgstr ""
 
 #: ../plugin-fw/licence/lib/yit-licence.php:531
-msgid "Software has been deactivate"
+msgid "Software has been deactivated"
 msgstr ""
 
 #: ../plugin-fw/licence/lib/yit-licence.php:532
-msgid "Exceeded maximum number of activations"
+msgid "Maximum number of activations exceeded"
 msgstr ""
 
 #: ../plugin-fw/licence/lib/yit-licence.php:533
@@ -668,7 +674,7 @@ msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:78
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:270
-msgid "Insert title for the field."
+msgid "Insert the title for the field."
 msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:83
@@ -690,7 +696,7 @@ msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:100
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:292
-msgid "Select type for this field."
+msgid "Select the type for this field."
 msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:105
@@ -700,7 +706,7 @@ msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:109
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:301
-msgid "Select this if you want this field already checked."
+msgid "Select this option if you want this field appears as already checked."
 msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:114
@@ -727,7 +733,7 @@ msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:127
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:319
-msgid "Message Error"
+msgid "Error Message"
 msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:131
@@ -742,12 +748,12 @@ msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:140
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:332
-msgid "Select this if it must be required."
+msgid "Select this option if it must be required."
 msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:149
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:341
-msgid "Select this if it must be a valid email."
+msgid "Select this option if the email must be valid."
 msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:154
@@ -886,10 +892,6 @@ msgstr ""
 msgid "No sidebar"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/sidebar-layout.php:28
-msgid "No sideabr"
-msgstr ""
-
 #: ../plugin-fw/templates/metaboxes/types/sidebar-layout.php:31
 #: ../plugin-fw/templates/metaboxes/types/sidebars.php:39
 msgid "Right sidebar"
@@ -956,41 +958,66 @@ msgid "Italic bold"
 msgstr ""
 
 #: ../plugin-options/settings-options.php:8
-msgid "General Options"
+msgid "Upgrade to the PREMIUM VERSION"
 msgstr ""
 
-#: ../plugin-options/settings-options.php:16
-msgid "Enable Quick View"
+#: ../plugin-options/settings-options.php:12
+msgid "Discover the Advanced Features"
 msgstr ""
 
-#: ../plugin-options/settings-options.php:23
-msgid "Quick View Button Label"
+#: ../plugin-options/settings-options.php:13
+msgid ""
+"Upgrade to the PREMIUM VERSION of YITH WooCommerce Quick View to benefit "
+"from all features!"
 msgstr ""
 
-#: ../plugin-options/settings-options.php:24
-msgid "Label for the quick view button in the WooCommerce loop."
+#: ../plugin-options/settings-options.php:20
+msgid "Get Support and Pro Features"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:21
+msgid ""
+"By purchasing the premium version of the plugin, you will take advantage of "
+"the advanced features of the product and you will get one year of free "
+"updates and support through our platform available 24h/24."
 msgstr ""
 
 #: ../plugin-options/settings-options.php:31
+msgid "General Options"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:39
+msgid "Enable Quick View"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:46
+msgid "Quick View Button Label"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:47
+msgid "Label for the quick view button in the WooCommerce loop."
+msgstr ""
+
+#: ../plugin-options/settings-options.php:54
 msgid "Enable Lightbox"
 msgstr ""
 
-#: ../plugin-options/settings-options.php:32
+#: ../plugin-options/settings-options.php:55
 msgid "Enable lightbox. Product images will open in a lightbox."
 msgstr ""
 
-#: ../plugin-options/settings-options.php:43
+#: ../plugin-options/settings-options.php:66
 msgid "Style Options"
 msgstr ""
 
-#: ../plugin-options/settings-options.php:50
+#: ../plugin-options/settings-options.php:73
 msgid "Modal Window Background Color"
 msgstr ""
 
-#: ../plugin-options/settings-options.php:58
+#: ../plugin-options/settings-options.php:81
 msgid "Closing Button Color"
 msgstr ""
 
-#: ../plugin-options/settings-options.php:66
+#: ../plugin-options/settings-options.php:89
 msgid "Closing Button Hover Color"
 msgstr ""

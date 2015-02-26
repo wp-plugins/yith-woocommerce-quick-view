@@ -1056,7 +1056,7 @@ class YIT_CPT_Unlimited {
 
                         'rewrite'     => array(
                             'label' => __( 'Rewrite', 'yit' ),
-                            'desc'  => __( 'Word used in the URL of each project (slug from post if empty)', 'yit' ),
+                            'desc'  => __( 'Univocal identification name in the URL for each product (slug from post if empty)', 'yit' ),
                             'type'  => 'text',
                             'std'   => '' ),
 

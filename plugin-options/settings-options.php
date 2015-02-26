@@ -4,6 +4,29 @@ $settings = array(
 
 	'settings'  => array(
 
+		'section_general_settings_videobox'         => array(
+			'name' => __( 'Upgrade to the PREMIUM VERSION', 'yith-wcqv' ),
+			'type' => 'videobox',
+			'default' => array(
+				'plugin_name'        => __( 'YITH WooCommerce Quick View', 'yith-wcqv' ),
+				'title_first_column' => __( 'Discover the Advanced Features', 'yith-wcqv' ),
+				'description_first_column' => __('Upgrade to the PREMIUM VERSION of YITH WooCommerce Quick View to benefit from all features!', 'yith-wcqv'),
+
+				'video' => array(
+					'video_id'           => '120573971',
+					'video_image_url'    =>  YITH_WCQV_ASSETS_URL.'/image/video-yith-woocommerce-quick-view.jpg',
+					'video_description'  => __( 'YITH WooCommerce Quick View', 'yith-wcqv' ),
+				),
+				'title_second_column' => __( 'Get Support and Pro Features', 'yith-wcqv' ),
+				'description_second_column' => __('By purchasing the premium version of the plugin, you will take advantage of the advanced features of the product and you will get one year of free updates and support through our platform available 24h/24.', 'yith-wcqv' ),
+				'button' => array(
+					'href' => 'http://yithemes.com/themes/plugins/yith-woocommerce-quick-view/',
+					'title' => 'Get Support and Pro Features'
+				)
+			),
+			'id'   => 'yith_wcqv_general_videobox'
+		),
+
 		'general-options' => array(
 			'title' => __( 'General Options', 'yith-wcqv' ),
 			'type' => 'title',

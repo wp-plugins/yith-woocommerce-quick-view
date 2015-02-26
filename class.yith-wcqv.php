@@ -14,7 +14,7 @@ if ( ! defined( 'YITH_WCQV' ) ) {
 
 if ( ! class_exists( 'YITH_WCQV' ) ) {
 	/**
-	 * YITH WooCommerce Ajax Search
+	 * YITH WooCommerce Quick View
 	 *
 	 * @since 1.0.0
 	 */

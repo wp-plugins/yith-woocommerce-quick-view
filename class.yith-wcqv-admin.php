@@ -4,7 +4,7 @@
  *
  * @author Yithemes
  * @package YITH WooCommerce Quick View
- * @version 1.1.1
+ * @version 1.0.0
  */
 
 if ( ! defined( 'YITH_WCQV' ) ) {
@@ -51,9 +51,14 @@ if ( ! class_exists( 'YITH_WCQV_Admin' ) ) {
 		protected $_panel;
 
 		/**
+		 * @var $_premium string Premium tab template file name
+		 */
+		protected $_premium = 'premium.php';
+
+		/**
 		 * @var string Premium version landing link
 		 */
-		protected $_premium_landing = '#';
+		protected $_premium_landing = 'http://yithemes.com/themes/plugins/yith-woocommerce-quick-view/';
 
 		/**
 		 * @var string Quick View panel page
@@ -97,9 +102,9 @@ if ( ! class_exists( 'YITH_WCQV_Admin' ) ) {
 			add_filter( 'plugin_action_links_' . plugin_basename( YITH_WCQV_DIR . '/' . basename( YITH_WCQV_FILE ) ), array( $this, 'action_links') );
 			add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 4 );
 
-			//add_action( 'yith_ajax_search_premium', array( $this, 'premium_tab' ) );
+			add_action( 'yith_quick_view_premium', array( $this, 'premium_tab' ) );
 
-			//add_action( 'admin_init', array( $this, 'register_pointer' ) );
+			add_action( 'admin_init', array( $this, 'register_pointer' ) );
 
 			// YITH WCQV Loaded
 			do_action( 'yith_wcqv_loaded' );
@@ -122,7 +127,7 @@ if ( ! class_exists( 'YITH_WCQV_Admin' ) ) {
 		public function action_links( $links ) {
 
 			$links[] = '<a href="' . admin_url( "admin.php?page={$this->_panel_page}" ) . '">' . __( 'Settings', 'yith-wcqv' ) . '</a>';
-			//$links[] = '<a href="' . $this->_premium_landing . '" target="_blank">' . __( 'Premium Version', 'yith-wcqv' ) . '</a>';
+			$links[] = '<a href="' . $this->_premium_landing . '" target="_blank">' . __( 'Premium Version', 'yith-wcqv' ) . '</a>';
 
 			return $links;
 		}
@@ -144,7 +149,7 @@ if ( ! class_exists( 'YITH_WCQV_Admin' ) ) {
 
 			$admin_tabs = array(
 				'settings' => __( 'Settings', 'yith-wcqv' ),
-				//'premium'  => __( 'Premium Version', 'yith-wcqv' ),
+				'premium'  => __( 'Premium Version', 'yith-wcqv' ),
 			);
 
 			$args = array(
@@ -180,7 +185,7 @@ if ( ! class_exists( 'YITH_WCQV_Admin' ) ) {
 		 * @return void
 		 */
 		public function premium_tab() {
-			$premium_tab_template = YITH_WCAS_TEMPLATE_PATH . '/admin/' . $this->_premium;
+			$premium_tab_template = YITH_WCQV_TEMPLATE_PATH . '/admin/' . $this->_premium;
 			if( file_exists( $premium_tab_template ) ) {
 				include_once($premium_tab_template);
 			}
