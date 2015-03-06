@@ -3,7 +3,7 @@ Contributors: yithemes
 Tags: yith, woocommerce, quick view, woocommerce quick view, yit, single product, products quick view, free quick view, woocommerce extension
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,11 @@ Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woo
 
 
 == Changelog ==
+
+= 1.0.2 = 
+
+* Added: Action yith_quick_view_custom_style_scripts
+* Added: Filter 'yith_quick_view_loader_gif
 
 = 1.0.1 =
 

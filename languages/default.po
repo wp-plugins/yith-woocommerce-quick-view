@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH Woocommerce Quick View\n"
-"POT-Creation-Date: 2015-02-26 15:20+0100\n"
-"PO-Revision-Date: 2015-02-26 15:21+0100\n"
+"POT-Creation-Date: 2015-03-06 09:27+0100\n"
+"PO-Revision-Date: 2015-03-06 09:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: YIThemes <plugins@yithemes.com>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
 "X-Poedit-KeywordsList: __ ;_e;_n:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
@@ -231,7 +231,7 @@ msgid "Taxonomy Rewrite"
 msgstr ""
 
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1083
-msgid "Set the word for each category page URL."
+msgid "Set univocal name for each category page URL."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1088
@@ -264,15 +264,15 @@ msgstr ""
 
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1631
 #, php-format
-msgid "Add %s by images"
+msgid "Add %s from images"
 msgstr ""
 
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1633
 msgid "Add with multiupload"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel-wc.php:325
-msgid "The changes you made will be lost if you leave this page."
+#: ../plugin-fw/lib/yit-plugin-panel-wc.php:345
+msgid "The changes you have made will be lost if you leave this page."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-plugin-panel.php:61
@@ -291,9 +291,9 @@ msgid "Save Changes"
 msgstr ""
 
 #: ../plugin-fw/lib/yit-plugin-panel.php:274
-#: ../plugin-fw/lib/yit-plugin-subpanel.php:145
 #: ../plugin-fw/templates/panel/woocommerce/woocommerce-form.php:8
-msgid "If you go on with this action, you will reset all options in this page."
+msgid ""
+"If you continue with this action, you will reset all options in this page."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-plugin-panel.php:276
@@ -305,11 +305,12 @@ msgstr ""
 #: ../plugin-fw/lib/yit-plugin-panel.php:276
 #: ../plugin-fw/lib/yit-plugin-subpanel.php:147
 #: ../plugin-fw/templates/panel/woocommerce/woocommerce-form.php:10
-msgid "Are you sure of it?"
+msgid "Are you sure?"
 msgstr ""
 
 #: ../plugin-fw/lib/yit-plugin-panel.php:410
-msgid "The element you have written already exists. Please, add another name."
+msgid ""
+"The element you have entered already exists. Please, enter another name."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-plugin-panel.php:411
@@ -338,7 +339,7 @@ msgid "An error has occurred during import. Please try again."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-plugin-panel.php:418
-msgid "The file inserted is not valid."
+msgid "The added file is not valid."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-plugin-panel.php:419
@@ -347,6 +348,12 @@ msgstr ""
 
 #: ../plugin-fw/lib/yit-plugin-panel.php:420
 msgid "Sorting successful."
+msgstr ""
+
+#: ../plugin-fw/lib/yit-plugin-subpanel.php:145
+msgid ""
+"If you continue with this action, you will reset all the options in this "
+"page."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-pointers.php:70
@@ -374,13 +381,12 @@ msgstr ""
 
 #: ../plugin-fw/lib/yit-pointers.php:85
 msgid ""
-"From now on, you can find all the options of your plugins in YIT Plugin "
-"menu.\n"
+"From now on, you can find all options of your plugins in YIT Plugin menu.\n"
 "                                    Any time one of our plugins is updated, "
 "a new entry will be added to this menu.\n"
-"                                    For example, after update, plugin "
-"options (such for YITH WooCommerce Wishlist, YITH WooCommerce Ajax Search, "
-"etc.)\n"
+"                                    For example, after the update, plugin "
+"options (such as for YITH WooCommerce Wishlist, YITH WooCommerce Ajax "
+"Search, etc.)\n"
 "                                    will be moved from previous location to "
 "YIT Plugin tab."
 msgstr ""
@@ -399,7 +405,7 @@ msgstr ""
 
 #: ../plugin-fw/lib/yit-upgrade.php:122
 msgid ""
-"please <a href=\"%activate_link%\"> activate </a> your copy of %plugin_name%."
+"please <a href=\"%activate_link%\">activate</a> your copy of %plugin_name%."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-upgrade.php:123
@@ -452,11 +458,12 @@ msgid ""
 msgstr ""
 
 #: ../plugin-fw/lib/yit-upgrade.php:493
-msgid "You can't update plugins for this site."
+msgid "You can't update the plugins for this site."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-upgrade.php:497
-msgid "You do not have sufficient permissions to update plugins for this site."
+msgid ""
+"You do not have sufficient permissions to update the plugins for this site."
 msgstr ""
 
 #: ../plugin-fw/lib/yit-upgrade.php:504

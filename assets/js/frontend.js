@@ -85,6 +85,9 @@ jQuery(document).ready(function($){
                     t.unblock();
             }
 
+            // stop loader
+            $(document).trigger( 'qv_loader_stop' );
+
         });
     };
 

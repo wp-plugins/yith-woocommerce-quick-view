@@ -152,10 +152,16 @@ if( ! class_exists( 'YITH_WCQV_Frontend' ) ) {
 
 			$version = version_compare( preg_replace( '/-beta-([0-9]+)/', '', WC()->version ), '2.3.0', '<' );
 
+            // loader gif
+            $loader = apply_filters( 'yith_quick_view_loader_gif', YITH_WCQV_ASSETS_URL . '/image/qv-loader.gif' );
+
+            // Allow user to load custom style and scripts
+            do_action( 'yith_quick_view_custom_style_scripts' );
+
 			wp_localize_script( 'yith-wcqv-frontend', 'yith_qv', array (
 					'ajaxurl' => admin_url( 'admin-ajax.php' ),
 					'is2_2' => $version,
-					'loader' => YITH_WCQV_ASSETS_URL . '/image/qv-loader.gif'
+					'loader' => $loader
 				)
 			);
 
