@@ -20,7 +20,7 @@ $settings = array(
 				'title_second_column' => __( 'Get Support and Pro Features', 'yith-wcqv' ),
 				'description_second_column' => __('By purchasing the premium version of the plugin, you will take advantage of the advanced features of the product and you will get one year of free updates and support through our platform available 24h/24.', 'yith-wcqv' ),
 				'button' => array(
-					'href' => 'http://yithemes.com/themes/plugins/yith-woocommerce-quick-view/',
+					'href' => YITH_WCQV_Admin()->get_premium_landing_uri(),
 					'title' => 'Get Support and Pro Features'
 				)
 			),

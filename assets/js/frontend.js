@@ -9,8 +9,7 @@
 jQuery(document).ready(function($){
     "use strict";
 
-    var trigger     = $(document).find( '.yith-wcqv-button' ),
-        qv_modal    = $(document).find( '#yith-quick-view-modal' ),
+    var qv_modal    = $(document).find( '#yith-quick-view-modal' ),
         qv_overlay  = qv_modal.find( '.yith-quick-view-overlay'),
         qv_content  = qv_modal.find( '#yith-quick-view-content' ),
         qv_close    = qv_modal.find( '#yith-quick-view-close' );
@@ -20,27 +19,38 @@ jQuery(document).ready(function($){
      *MAIN BUTTON OPEN
      ==================*/
 
-    trigger.on( 'click', function(e){
+    $.yith_quick_view = function() {
 
-        e.preventDefault();
+        var trigger  = $(document).find( '.yith-wcqv-button' );
 
-        var t           = $(this),
-            product_id  = t.data( 'product_id' ),
-            is_blocked  = false;
+        // remove prev click event
+        trigger.off( 'click' );
 
-        if ( typeof yith_qv.loader !== 'undefined' ) {
-            is_blocked = true;
-            t.block({
-                message: null,
-                overlayCSS  : {
-                    background: '#fff url(' + yith_qv.loader + ') no-repeat center',
-                    opacity   : 0.5,
-                    cursor    : 'none'
-                }
-            });
-        }
-        ajax_call( t, product_id, is_blocked );
-    });
+        trigger.on( 'click', function(e){
+
+            e.preventDefault();
+
+            var t           = $(this),
+                product_id  = t.data( 'product_id' ),
+                is_blocked  = false;
+
+            if ( typeof yith_qv.loader !== 'undefined' ) {
+                is_blocked = true;
+                t.block({
+                    message: null,
+                    overlayCSS  : {
+                        background: '#fff url(' + yith_qv.loader + ') no-repeat center',
+                        opacity   : 0.5,
+                        cursor    : 'none'
+                    }
+                });
+            }
+            ajax_call( t, product_id, is_blocked );
+        });
+    };
+
+    // init
+    $.yith_quick_view();
 
     /*================
      * MAIN AJAX CALL
@@ -77,7 +87,6 @@ jQuery(document).ready(function($){
                     deeplinking       : false
                 });
             }
-
 
             if( ! qv_modal.hasClass( 'open' ) ) {
                 qv_modal.addClass('open');

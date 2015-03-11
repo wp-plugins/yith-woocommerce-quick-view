@@ -108,6 +108,7 @@ if ( ! class_exists( 'YITH_WCQV_Admin' ) ) {
 
 			// YITH WCQV Loaded
 			do_action( 'yith_wcqv_loaded' );
+
 		}
 
 
@@ -127,7 +128,7 @@ if ( ! class_exists( 'YITH_WCQV_Admin' ) ) {
 		public function action_links( $links ) {
 
 			$links[] = '<a href="' . admin_url( "admin.php?page={$this->_panel_page}" ) . '">' . __( 'Settings', 'yith-wcqv' ) . '</a>';
-			$links[] = '<a href="' . $this->_premium_landing . '" target="_blank">' . __( 'Premium Version', 'yith-wcqv' ) . '</a>';
+			$links[] = '<a href="' . $this->get_premium_landing_uri() . '" target="_blank">' . __( 'Premium Version', 'yith-wcqv' ) . '</a>';
 
 			return $links;
 		}
@@ -231,13 +232,25 @@ if ( ! class_exists( 'YITH_WCQV_Admin' ) ) {
 									__( 'In the YIT Plugin tab you can find the YITH WooCommerce Quick View options.
 										With this menu, you can access to all the settings of our plugins that you have activated.
 										YITH WooCommerce Quick View is available in an outstanding PREMIUM version with many new options,
-										<a href="' . $this->_premium_landing . '">discover it now!</a>', 'yith-wcqv' )
+										<a href="' . $this->get_premium_landing_uri() . '">discover it now!</a>', 'yith-wcqv' )
 									),
 				'position'      => array( 'edge' => 'left', 'align' => 'center' ),
 				'init'          => YITH_WCQV_FREE_INIT
 			);
 
 			YIT_Pointers()->register( $args );
+		}
+
+
+		/**
+		 * Get the premium landing uri
+		 *
+		 * @since   1.0.0
+		 * @author  Andrea Grillo <andrea.grillo@yithemes.com>
+		 * @return  string The premium landing link
+		 */
+		public function get_premium_landing_uri(){
+			return defined( 'YITH_REFER_ID' ) ? $this->_premium_landing . '?refer_id=' . YITH_REFER_ID : $this->_premium_landing;
 		}
 
 	}
