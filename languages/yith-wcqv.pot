@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH Woocommerce Quick View\n"
+"POT-Creation-Date: 2015-05-18 11:52+0100\n"
+"PO-Revision-Date: 2015-05-18 11:52+0100\n"
+"Last-Translator: \n"
+"Language-Team: YIThemes <plugins@yithemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Poedit-KeywordsList: __ ;_e;_n:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../plugin-fw\n"
+
+#: ../class.yith-wcqv-admin.php:130 ../class.yith-wcqv-admin.php:152
+msgid "Settings"
+msgstr ""
+
+#: ../class.yith-wcqv-admin.php:131 ../class.yith-wcqv-admin.php:153
+msgid "Premium Version"
+msgstr ""
+
+#: ../class.yith-wcqv-admin.php:159 ../class.yith-wcqv-admin.php:160
+#: ../plugin-options/settings-options.php:57
+msgid "Quick View"
+msgstr ""
+
+#: ../class.yith-wcqv-admin.php:214
+msgid "Plugin Documentation"
+msgstr ""
+
+#: ../class.yith-wcqv-admin.php:231 ../plugin-options/settings-options.php:11
+#: ../plugin-options/settings-options.php:18
+msgid "YITH WooCommerce Quick View"
+msgstr ""
+
+#: ../class.yith-wcqv-admin.php:232
+msgid ""
+"In the YIT Plugin tab you can find the YITH WooCommerce Quick View options.\n"
+"\t\t\t\t\t\t\t\t\t\tWith this menu, you can access to all the settings of "
+"our plugins that you have activated.\n"
+"\t\t\t\t\t\t\t\t\t\tYITH WooCommerce Quick View is available in an "
+"outstanding PREMIUM version with many new options,\n"
+"\t\t\t\t\t\t\t\t\t\t<a href=\""
+msgstr ""
+
+#: ../init.php:41
+msgid ""
+"YITH WooCommerce Quick View is enabled but not effective. It requires "
+"Woocommerce in order to work."
+msgstr ""
+
+#: ../init.php:50
+msgid ""
+"You can't activate the free version of YITH WooCommerce Quick View while you "
+"are using the premium one."
+msgstr ""
+
+#: ../plugin-options/settings-options.php:8
+msgid "Upgrade to the PREMIUM VERSION"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:12
+msgid "Discover the Advanced Features"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:13
+msgid ""
+"Upgrade to the PREMIUM VERSION of YITH WooCommerce Quick View to benefit "
+"from all features!"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:20
+msgid "Get Support and Pro Features"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:21
+msgid ""
+"By purchasing the premium version of the plugin, you will take advantage of "
+"the advanced features of the product and you will get one year of free "
+"updates and support through our platform available 24h/24."
+msgstr ""
+
+#: ../plugin-options/settings-options.php:31
+msgid "General Options"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:39
+msgid "Enable Quick View"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:46
+msgid "Enable Quick View on mobile"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:47
+msgid "Enable quick view features on mobile device too"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:54
+msgid "Quick View Button Label"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:55
+msgid "Label for the quick view button in the WooCommerce loop."
+msgstr ""
+
+#: ../plugin-options/settings-options.php:62
+msgid "Enable Lightbox"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:63
+msgid "Enable lightbox. Product images will open in a lightbox."
+msgstr ""
+
+#: ../plugin-options/settings-options.php:74
+msgid "Style Options"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:81
+msgid "Modal Window Background Color"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:89
+msgid "Closing Button Color"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:97
+msgid "Closing Button Hover Color"
+msgstr ""
