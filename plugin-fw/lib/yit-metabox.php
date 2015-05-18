@@ -20,17 +20,17 @@ if ( ! class_exists( 'YIT_Metabox' ) ) {
      * the metabox can be created using this code
      * <code>
      * $args1 = array(
-     *      'label'    => __( 'Metabox Label', 'yit' ),
+     *      'label'    => __( 'Metabox Label', 'yith-plugin-fw' ),
      *      'pages'    => 'page',   //or array( 'post-type1', 'post-type2')
      *      'context'  => 'normal', //('normal', 'advanced', or 'side')
      *      'priority' => 'default',
      *      'tabs'     => array(
      *                 'settings' => array( //tab
-     *                          'label'  => __( 'Settings', 'yit' ),
+     *                          'label'  => __( 'Settings', 'yith-plugin-fw' ),
      *                          'fields' => array(
      *                          'meta_checkbox' => array(
-     *                                 'label'    => __( 'Show title', 'yit' ),
-     *                                 'desc'     => __( 'Show title of the page or not.', 'yit' ),
+     *                                 'label'    => __( 'Show title', 'yith-plugin-fw' ),
+     *                                 'desc'     => __( 'Choose whether to show title of the page or not.', 'yith-plugin-fw' ),
      *                                 'type'     => 'checkbox',
      *                                 'private'  => false,
      *                                 'std'      => '1'),
@@ -154,13 +154,11 @@ if ( ! class_exists( 'YIT_Metabox' ) ) {
             wp_enqueue_script( 'jquery-ui-datepicker' );
             wp_enqueue_script( 'yit-spinner', YIT_CORE_PLUGIN_URL . '/assets/js/panel.spinner.js', array( 'jquery' ), '0.0.1', true );
             wp_enqueue_script( 'jquery-chosen', YIT_CORE_PLUGIN_URL . '/assets/js/chosen/chosen.jquery.js', array( 'jquery' ), '1.1.0', true );
+            wp_enqueue_script( 'ajax-chosen', yit_load_js_file( YIT_CORE_PLUGIN_URL . '/assets/js/chosen/ajax-chosen.jquery.js' ), array( 'jquery' ), '1.1.0', true );
             wp_enqueue_script( 'yit-metabox', YIT_CORE_PLUGIN_URL . '/assets/js/metabox.js', array( 'jquery', 'wp-color-picker' ), '1.0.0', true );
             wp_enqueue_style( 'jquery-ui-overcast', YIT_CORE_PLUGIN_URL . '/assets/css/overcast/jquery-ui-1.8.9.custom.css', false, '1.8.9', 'all' );
 
-            if( function_exists( 'WC' ) ){
 
-                wp_enqueue_script('ajax-chosen');
-            }
         }
 
         /**
@@ -407,8 +405,10 @@ if ( ! class_exists( 'YIT_Metabox' ) ) {
          * @since    1.0
          * @author   Emanuela Castorina <emanuela.castorina@yithemes.it>
          */
-        public function register_metabox() {
-            add_meta_box( $this->id, $this->options['label'], array( $this, 'show' ), $this->options['pages'], $this->options['context'], $this->options['priority'] );
+        public function register_metabox( $post_type ) {
+            if( in_array( $post_type, (array) $this->options['pages'] ) ){
+                add_meta_box( $this->id, $this->options['label'], array( $this, 'show' ), $post_type, $this->options['context'], $this->options['priority'] );
+            }
         }
 
         /**

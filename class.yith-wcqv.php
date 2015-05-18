@@ -73,8 +73,13 @@ if ( ! class_exists( 'YITH_WCQV' ) ) {
 			if ( is_admin() ) {
 				YITH_WCQV_Admin();
 			}
+
 			// Class frontend
-			if( get_option( 'yith-wcqv-enable' ) == 'yes' ) {
+			$enable             = get_option( 'yith-wcqv-enable' ) == 'yes' ? true : false;
+			$enable_on_mobile   = get_option( 'yith-wcqv-enable-mobile' ) ==  'yes' ? true : false;
+
+			// Class frontend
+			if( ( ! wp_is_mobile() && $enable ) || ( wp_is_mobile() && $enable_on_mobile && $enable ) ) {
 				YITH_WCQV_Frontend();
 			}
 		}

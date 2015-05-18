@@ -19,14 +19,14 @@ jQuery(document).ready(function($){
      *MAIN BUTTON OPEN
      ==================*/
 
-    $.yith_quick_view = function() {
+    $.fn.yith_quick_view = function() {
 
-        var trigger  = $(document).find( '.yith-wcqv-button' );
+        var button  = $(document).find( '.yith-wcqv-button' );
 
         // remove prev click event
-        trigger.off( 'click' );
+        button.off( 'click' );
 
-        trigger.on( 'click', function(e){
+        button.on( 'click', function(e){
 
             e.preventDefault();
 
@@ -48,9 +48,6 @@ jQuery(document).ready(function($){
             ajax_call( t, product_id, is_blocked );
         });
     };
-
-    // init
-    $.yith_quick_view();
 
     /*================
      * MAIN AJAX CALL
@@ -131,5 +128,13 @@ jQuery(document).ready(function($){
     };
 
     close_modal_qv();
+
+    // START
+    $.fn.yith_quick_view();
+
+    $( document ).on( 'yith_infs_adding_elem', function(){
+        // RESTART
+        $.fn.yith_quick_view();
+    });
 
 });

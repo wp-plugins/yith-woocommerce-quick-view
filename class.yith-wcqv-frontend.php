@@ -118,7 +118,7 @@ if( ! class_exists( 'YITH_WCQV_Frontend' ) ) {
 
 			global $product;
 
-			$label = get_option( 'yith-wcqv-button-label' );
+			$label = esc_html( get_option( 'yith-wcqv-button-label' ) );
 
 			echo '<a href="#" class="button yith-wcqv-button" data-product_id="' . $product->id . '">' . $label . '</a>';
 		}

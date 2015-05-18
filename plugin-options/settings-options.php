@@ -31,12 +31,20 @@ $settings = array(
 			'title' => __( 'General Options', 'yith-wcqv' ),
 			'type' => 'title',
 			'desc' => '',
-			'id' => 'yith-wcqc-general-options'
+			'id' => 'yith-wcqv-general-options'
 		),
 
 		'enable-quick-view' => array(
 			'id'        => 'yith-wcqv-enable',
 			'name'      => __( 'Enable Quick View', 'yith-wcqv' ),
+			'type'      => 'checkbox',
+			'default'   => 'yes'
+		),
+
+		'enable-quick-view-mobile'  => array(
+			'id'        => 'yith-wcqv-enable-mobile',
+			'name'      => __( 'Enable Quick View on mobile', 'yith-wcqv' ),
+			'desc'      => __( 'Enable quick view features on mobile device too', 'yith-wcqv' ),
 			'type'      => 'checkbox',
 			'default'   => 'yes'
 		),

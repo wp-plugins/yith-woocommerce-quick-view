@@ -58,7 +58,7 @@ if ( ! class_exists( 'YITH_WCQV_Admin' ) ) {
 		/**
 		 * @var string Premium version landing link
 		 */
-		protected $_premium_landing = 'http://yithemes.com/themes/plugins/yith-woocommerce-quick-view/';
+		protected $_premium_landing = 'https://yithemes.com/themes/plugins/yith-woocommerce-quick-view/';
 
 		/**
 		 * @var string Quick View panel page
