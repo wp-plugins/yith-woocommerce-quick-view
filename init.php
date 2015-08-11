@@ -3,15 +3,15 @@
 * Plugin Name: YITH WooCommerce Quick View
 * Plugin URI: http://yithemes.com/
 * Description: YITH WooCommerce Quick View allows your users to have a quick look about products.
-* Version: 1.0.4
+* Version: 1.0.5
 * Author: Yithemes
 * Author URI: http://yithemes.com/
-* Text Domain: yit
+* Text Domain: yith-wcqv
 * Domain Path: /languages/
 *
 * @author Yithemes
 * @package YITH WooCommerce Quick View
-* @version 1.0.4
+* @version 1.0.5
 */
 /*  Copyright 2015  Your Inspiration Themes  (email : plugins@yithemes.com)
 
@@ -38,7 +38,7 @@ if ( ! function_exists( 'is_plugin_active' ) ) {
 function yith_wcqv_install_woocommerce_admin_notice() {
 	?>
 	<div class="error">
-		<p><?php _e( 'YITH WooCommerce Quick View is enabled but not effective. It requires Woocommerce in order to work.', 'yit' ); ?></p>
+		<p><?php _e( 'YITH WooCommerce Quick View is enabled but not effective. It requires WooCommerce in order to work.', 'yith-wcqv' ); ?></p>
 	</div>
 	<?php
 }
@@ -47,7 +47,7 @@ function yith_wcqv_install_woocommerce_admin_notice() {
 function yith_wcqv_install_free_admin_notice() {
 	?>
 	<div class="error">
-		<p><?php _e( 'You can\'t activate the free version of YITH WooCommerce Quick View while you are using the premium one.', 'yit' ); ?></p>
+		<p><?php _e( 'You can\'t activate the free version of YITH WooCommerce Quick View while you are using the premium one.', 'yith-wcqv' ); ?></p>
 	</div>
 	<?php
 }
@@ -59,7 +59,7 @@ register_activation_hook( __FILE__, 'yith_plugin_registration_hook' );
 
 
 if ( ! defined( 'YITH_WCQV_VERSION' ) ){
-	define( 'YITH_WCQV_VERSION', '1.0.4' );
+	define( 'YITH_WCQV_VERSION', '1.0.5' );
 }
 
 if ( ! defined( 'YITH_WCQV_FREE_INIT' ) ) {
@@ -93,7 +93,7 @@ if ( ! defined( 'YITH_WCQV_ASSETS_URL' ) ) {
 
 function yith_wcqv_init() {
 
-	load_plugin_textdomain( 'yit', false, dirname( plugin_basename( __FILE__ ) ). '/languages/' );
+	load_plugin_textdomain( 'yith-wcqv', false, dirname( plugin_basename( __FILE__ ) ). '/languages/' );
 
 	// Load required classes and functions
 	require_once('class.yith-wcqv-admin.php');

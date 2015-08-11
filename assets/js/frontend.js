@@ -9,6 +9,10 @@
 jQuery(document).ready(function($){
     "use strict";
 
+    if( typeof yith_qv === 'undefined' ) {
+        return;
+    }
+
     var qv_modal    = $(document).find( '#yith-quick-view-modal' ),
         qv_overlay  = qv_modal.find( '.yith-quick-view-overlay'),
         qv_content  = qv_modal.find( '#yith-quick-view-content' ),

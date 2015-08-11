@@ -1,7 +1,8 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH Woocommerce Quick View\n"
-"POT-Creation-Date: 2015-05-18 11:52+0100\n"
+"POT-Creation-Date: 2015-08-11 16:51+0200\n"
 "PO-Revision-Date: 2015-05-18 11:52+0100\n"
 "Last-Translator: \n"
 "Language-Team: YIThemes <plugins@yithemes.com>\n"
@@ -9,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
 "X-Poedit-KeywordsList: __ ;_e;_n:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
@@ -53,7 +54,7 @@ msgstr ""
 #: ../init.php:41
 msgid ""
 "YITH WooCommerce Quick View is enabled but not effective. It requires "
-"Woocommerce in order to work."
+"WooCommerce in order to work."
 msgstr ""
 
 #: ../init.php:50
