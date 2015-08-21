@@ -72,6 +72,7 @@ jQuery(document).ready(function($){
             var form_variation = qv_content.find( '.variations_form' );
 
             form_variation.wc_variation_form();
+            form_variation.trigger( 'check_variations' );
 
             if( typeof $.fn.yith_wccl !== 'undefined' ) {
                 form_variation.yith_wccl();
@@ -136,7 +137,7 @@ jQuery(document).ready(function($){
     // START
     $.fn.yith_quick_view();
 
-    $( document ).on( 'yith_infs_adding_elem', function(){
+    $( document ).on( 'yith_infs_adding_elem yith-wcan-ajax-filtered', function(){
         // RESTART
         $.fn.yith_quick_view();
     });

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH Woocommerce Quick View\n"
-"POT-Creation-Date: 2015-08-11 16:51+0200\n"
+"POT-Creation-Date: 2015-08-21 13:23+0200\n"
 "PO-Revision-Date: 2015-05-18 11:52+0100\n"
 "Last-Translator: \n"
 "Language-Team: YIThemes <plugins@yithemes.com>\n"
