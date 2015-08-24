@@ -3,7 +3,7 @@ Contributors: yithemes
 Tags: yith, woocommerce, quick view, woocommerce quick view, yit, single product, products quick view, free quick view, woocommerce extension, woocommerce plugin, product summary, summary, modal
 Requires at least: 4.0
 Tested up to: 4.3
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,10 @@ Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woo
 3. The quick view modal.
 
 == Changelog ==
+
+= 1.0.8 =
+
+* Fixed: Main template issue
 
 = 1.0.7 =
 
@@ -99,9 +103,6 @@ If you have created your own language pack, or have an update for an existing on
 
 == Upgrade notice ==
 
-= 1.0.7 =
+= 1.0.8 =
 
-* Added: Compatibility with Wordpress 4.3
-* Added: WPML config xml
-* Fixed: Default variation select
-* Updated: Language file .pot
+* Fixed: Main template issue
